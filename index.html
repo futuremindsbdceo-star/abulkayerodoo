@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,72 +11,102 @@
 
 <style>
 
-body{
-font-family: Arial, sans-serif;
+*{
 margin:0;
-background:#f5f7fb;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0ea5e9,#22c55e);
 color:#333;
 }
 
 header{
-background:#0f172a;
-color:white;
-padding:20px;
-text-align:center;
-}
-
-nav{
-margin-top:10px;
+background:white;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
 nav a{
-color:white;
-margin:0 10px;
+margin-left:20px;
 text-decoration:none;
 font-weight:bold;
+color:#333;
 }
 
 .hero{
+min-height:80vh;
 display:flex;
-flex-wrap:wrap;
 align-items:center;
 justify-content:center;
+gap:60px;
 padding:40px;
-gap:40px;
-background:white;
-}
-
-.hero img{
-width:250px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+flex-wrap:wrap;
 }
 
 .hero-text{
 max-width:500px;
+color:white;
+}
+
+.hero-text h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero-text h2{
+font-weight:normal;
+margin-bottom:20px;
+}
+
+.hero-text p{
+margin-bottom:20px;
+}
+
+.hero img{
+width:260px;
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,0.3);
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:white;
+color:#0ea5e9;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
 }
 
 section{
-padding:40px;
+padding:60px 10%;
+background:white;
 }
 
 h2{
 text-align:center;
-margin-bottom:30px;
+margin-bottom:40px;
 }
 
-.skills, .services{
+.skills{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:20px;
 }
 
 .card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.08);
+background:#f1f5f9;
+padding:25px;
+border-radius:12px;
 text-align:center;
+font-weight:bold;
+box-shadow:0 4px 10px rgba(0,0,0,0.05);
 }
 
 .projects{
@@ -86,29 +118,26 @@ gap:30px;
 .project img{
 width:100%;
 border-radius:10px;
+margin-bottom:15px;
 }
 
 .contact{
-text-align:center;
 background:#0f172a;
 color:white;
-padding:40px;
+text-align:center;
+padding:60px 20px;
+}
+
+.contact a{
+color:#38bdf8;
+text-decoration:none;
 }
 
 footer{
 text-align:center;
-padding:15px;
-background:#111827;
+padding:20px;
+background:#020617;
 color:white;
-}
-
-button{
-background:#2563eb;
-color:white;
-border:none;
-padding:10px 20px;
-border-radius:6px;
-cursor:pointer;
 }
 
 </style>
@@ -118,49 +147,36 @@ cursor:pointer;
 <body>
 
 <header>
-<h1>Abul Khayer</h1>
-<p>Odoo ERP Implementation Specialist</p>
+
+<h2>Abul Khayer</h2>
 
 <nav>
-<a href="#">Home</a>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#services">Services</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
+
+<a href="#">Home</a> <a href="#skills">Skills</a> <a href="#projects">Projects</a> <a href="#contact">Contact</a>
+
 </nav>
 
 </header>
 
 <div class="hero">
 
-<img src="abulkhayer.jpeg" alt="Abul Khayer">
-
 <div class="hero-text">
 
-<h2>Hello, I'm Abul Khayer</h2>
+<h1>Abul Khayer</h1>
+
+<h2>Odoo ERP Implementation Specialist</h2>
 
 <p>
 Helping businesses implement and manage Odoo ERP solutions for manufacturing, retail and cafe operations.
 </p>
 
-<p><b>Location:</b> Sherpur, Bogura, Bangladesh</p>
-
-<p><b>Service Area:</b> North Bengal, Bangladesh</p>
+<a class="btn" href="#contact">Contact Me</a>
 
 </div>
 
+<img src="abulkhayer.jpeg" alt="Abul Khayer">
+
 </div>
-
-<section id="about">
-
-<h2>About</h2>
-
-<p style="text-align:center; max-width:800px; margin:auto;">
-Abul Khayer is an Odoo ERP Implementation Specialist who helps businesses automate their operations using Odoo ERP. He has practical experience implementing ERP systems for manufacturing companies and cafe businesses in Bangladesh.
-</p>
-
-</section>
 
 <section id="skills">
 
@@ -170,37 +186,15 @@ Abul Khayer is an Odoo ERP Implementation Specialist who helps businesses automa
 
 <div class="card">Odoo ERP Implementation</div>
 
-<div class="card">Odoo ERP Configuration</div>
+<div class="card">ERP Configuration</div>
 
 <div class="card">Inventory Management</div>
 
 <div class="card">POS System Setup</div>
 
-<div class="card">Business Process Automation</div>
+<div class="card">Business Automation</div>
 
-<div class="card">ERP Training & Support</div>
-
-</div>
-
-</section>
-
-<section id="services">
-
-<h2>Services</h2>
-
-<div class="services">
-
-<div class="card">Odoo ERP Implementation</div>
-
-<div class="card">Manufacturing ERP Setup</div>
-
-<div class="card">Retail & POS ERP Systems</div>
-
-<div class="card">Inventory Management System</div>
-
-<div class="card">Business Process Automation</div>
-
-<div class="card">Odoo ERP Support</div>
+<div class="card">ERP Training</div>
 
 </div>
 
@@ -212,26 +206,26 @@ Abul Khayer is an Odoo ERP Implementation Specialist who helps businesses automa
 
 <div class="projects">
 
-<div class="card project">
+<div class="project">
 
 <img src="AnandaFoods.webp">
 
 <h3>Ananda Foods ERP</h3>
 
 <p>
-Implemented Odoo ERP system to manage purchasing, manufacturing, inventory, wholesale distribution and retail sales handled by sales representatives.
+Implemented Odoo ERP system for manufacturing, inventory, wholesale and retail sales management.
 </p>
 
 </div>
 
-<div class="card project">
+<div class="project">
 
 <img src="futuremindscafe.jpg">
 
 <h3>Future Minds Studio Cafe ERP</h3>
 
 <p>
-Implemented Odoo ERP system for cafe operations including POS sales, inventory tracking, product management and reporting.
+Implemented POS and inventory management system using Odoo ERP for cafe operations.
 </p>
 
 </div>
@@ -244,19 +238,18 @@ Implemented Odoo ERP system for cafe operations including POS sales, inventory t
 
 <h2>Contact</h2>
 
-<p>📞 Phone / WhatsApp: +8801723805798</p>
+<p>Phone / WhatsApp: +8801723805798</p>
 
-<p>📧 Email: khairabm75@gmail.com</p>
-
-<p>
-<a href="https://wa.me/8801723805798">
-<button>WhatsApp</button>
-</a>
-</p>
+<p>Email: khairabm75@gmail.com</p>
 
 <p>
-<a href="https://www.facebook.com/khair.khan.33483" style="color:white">Facebook</a> |
-<a href="https://www.linkedin.com/in/abul-khayer-2a1911213" style="color:white">LinkedIn</a>
+
+<a href="https://wa.me/8801723805798">WhatsApp</a> |
+
+<a href="https://www.facebook.com/khair.khan.33483">Facebook</a> |
+
+<a href="https://www.linkedin.com/in/abul-khayer-2a1911213">LinkedIn</a>
+
 </p>
 
 </section>
@@ -268,4 +261,5 @@ Implemented Odoo ERP system for cafe operations including POS sales, inventory t
 </footer>
 
 </body>
+
 </html>
